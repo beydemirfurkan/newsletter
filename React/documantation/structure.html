@@ -1,0 +1,253 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Documantation</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- animate css -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- font-awesome v4.6.3 css -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- modernizr css -->
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <div class="sidebar-wrap">
+        <ul>
+            <li><a href="index.html">Introduction</a></li>
+            <li><a href="installation.html">Installation</a></li>
+            <li class="active"><a href="structure.html"> File Structure</a></li>
+            <li><a href="components.html">Components</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <!-- <li><a href="changelog.html">Changelog</a></li> -->
+        </ul>
+    </div>
+    <div class="header-area">
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="">
+        </div>
+        <h2>File Structure</h2>
+    </div>
+
+    <div class="main-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card-wrap">
+                        <div class="structure-wrap">
+                            <h3>PROJECT STRUCTURE</h3>
+                            <p>Newsprk has React project: </p>
+<pre class="documentation__structure">
+<code>
+Newsprk/
+    |——template
+    |  |public/
+    |  |  |__favicon.png
+    |  |  |__index.html
+    |  |src/
+    |  |  |——components/                    --all basic component here
+    |  |  |    |——BannerSection
+    |  |  |    |——BannerSectionThree
+    |  |  |    |——BlogComment
+    |  |  |    |——BreadCrumb
+    |  |  |    |——BusinessAllNewsTwo
+    |  |  |    |——BusinessCarousel
+    |  |  |    |——BusinessImageCarousel
+    |  |  |    |——BusinessNews
+    |  |  |    |——BusinessNewsTwo
+    |  |  |    |——CategoriesWidget
+    |  |  |    |——CategoryFour
+    |  |  |    |——EntertainmentNews
+    |  |  |    |——FeatureNews
+    |  |  |    |——FeatureNewsAll
+    |  |  |    |——FeatureNewsTwo
+    |  |  |    |——FollowUs
+    |  |  |    |——FooterArea
+    |  |  |    |——FooterAreaThree
+    |  |  |    |——FooterAreaTwo
+    |  |  |    |——FooterCopyright
+    |  |  |    |——FooterMoreNews
+    |  |  |    |——FooterMoreNewsTwo
+    |  |  |    |——FooterNewsCategories
+    |  |  |    |——GalleryCarousel
+    |  |  |    |——HeroArea
+    |  |  |    |——International
+    |  |  |    |——InternationalNews
+    |  |  |    |——LogoArea
+    |  |  |    |——LogoAreaThree
+    |  |  |    |——LogoAreaTwo
+    |  |  |    |——MainMenu
+    |  |  |    |——MainMenuThree
+    |  |  |    |——MainMenuTwo
+    |  |  |    |——MixCarousel
+    |  |  |    |——MostShareWidget
+    |  |  |    |——MostView
+    |  |  |    |——MostViewThree
+    |  |  |    |——MostViewTwo
+    |  |  |    |——NewsLetter
+    |  |  |    |——Opinion
+    |  |  |    |——OurBlogSection
+    |  |  |    |——OurBlogSectionTwo
+    |  |  |    |——PageNotFound
+    |  |  |    |——PopularPosts
+    |  |  |    |——PostCarousel
+    |  |  |    |——PostGallery
+    |  |  |    |——PostGalleryTwo
+    |  |  |    |——PostOnePagination
+    |  |  |    |——ScienceNews
+    |  |  |    |——ScrollTopButton
+    |  |  |    |——SearchModal
+    |  |  |    |——SidebarMenu
+    |  |  |    |——Sports
+    |  |  |    |——SportsCarousel
+    |  |  |    |——SportsNewsTwo
+    |  |  |    |——TopBar
+    |  |  |    |——TopBarTwo
+    |  |  |    |——TrendingCarousel
+    |  |  |    |——TrendingNews
+    |  |  |    |——TrendingNewsSlider
+    |  |  |    |——TrendingNewsThree
+    |  |  |    |——TrendingNewsTwo
+    |  |  |    |——TwitterFeed
+    |  |  |    |——TwitterfeedTwo
+    |  |  |    |——uiStyle
+    |  |  |    |——UpcomingMatches
+    |  |  |    |——VideoNews
+    |  |  |    |——VIdeoNewsSection
+    |  |  |    |——VideoPost
+    |  |  |    |——Whatsnew
+    |  |  |    |——WidgetFinance
+    |  |  |    |——WidgetFinanceTwo
+    |  |  |    |——WidgetMorenews
+    |  |  |    |——WidgetOpinionNews
+    |  |  |    |——WidgetTab
+    |  |  |    |——WidgetTabFour
+    |  |  |    |——WidgetTabThree
+    |  |  |    |——WidgetTabTwo
+    |  |  |    |——WidgetTrendingNews
+    |  |  |    |——WidgetTrendingNewsThree
+    |  |  |    |——WidgetTrendingNewsTwo
+    |  |  |    |——SportsNews
+    |  |  |    
+    |  |  |——containers/
+    |  |  |    |——__Routes                 --all route file
+    |  |  |    |——_PrivateRoute            --privat route component
+    |  |  |    |——_PublicRoute             --public route component
+    |  |  |    |——AboutUsDarkPage
+    |  |  |    |——AboutUsPage
+    |  |  |    |——AboutUsThreePage
+    |  |  |    |——AboutUsTwoPage
+    |  |  |    |——App                      --main app js
+    |  |  |    |——ArchiveDarkPage
+    |  |  |    |——ArchivePage
+    |  |  |    |——ArchiveThreePage
+    |  |  |    |——ArchiveTwoPage
+    |  |  |    |——AudioPostOneDarkPage
+    |  |  |    |——AudioPostOneHThreePage
+    |  |  |    |——AudioPostOneHTwoPage
+    |  |  |    |——AudioPostOnePage
+    |  |  |    |——AudioPostThreeDarkPage
+    |  |  |    |——AudioPostThreeHThreePage
+    |  |  |    |——AudioPostThreeHTwoPage
+    |  |  |    |——AudioPostThreePage
+    |  |  |    |——AudioPostTwoDarkPage
+    |  |  |    |——AudioPostTwoHThreePage
+    |  |  |    |——AudioPostTwoHTwoPage
+    |  |  |    |——AudioPostTwoPage
+    |  |  |    |——BusinessDarkPage
+    |  |  |    |——BusinessPage
+    |  |  |    |——BusinessThreePage
+    |  |  |    |——BusinessTwoPage
+    |  |  |    |——ContactUsDarkPage
+    |  |  |    |——ContactUsPage
+    |  |  |    |——ContactUsThreePage
+    |  |  |    |——EntertainmentDarkPage
+    |  |  |    |——EntertainmentPage
+    |  |  |    |——EntertainmentThreePage
+    |  |  |    |——EntertainmentTwoPage
+    |  |  |    |——FeatureDarkPage
+    |  |  |    |——FeaturePage
+    |  |  |    |——FeatureThreePage
+    |  |  |    |——FeatureTwoPage
+    |  |  |    |——HomeDarkPage
+    |  |  |    |——HomePage
+    |  |  |    |——HomePageThree
+    |  |  |    |——HomePageTwo
+    |  |  |    |——NotFoundDarkPage
+    |  |  |    |——NotFoundPage
+    |  |  |    |——NotFoundThreePage
+    |  |  |    |——PostOneDarkPage
+    |  |  |    |——PostOneHThreeLeftSidebarPage
+    |  |  |    |——PostOneHThreePage
+    |  |  |    |——PostOneHTwoLeftSidebarPage
+    |  |  |    |——PostOneHTwoPage
+    |  |  |    |——PostOneLeftSidebarDarkPage
+    |  |  |    |——PostOneLeftSidebarPage
+    |  |  |    |——PostOnePage
+    |  |  |    |——PostThreeDarkPage
+    |  |  |    |——PostThreeHThreePage
+    |  |  |    |——PostThreeHTwoPage
+    |  |  |    |——PostThreePage
+    |  |  |    |——PostTwoDarkPage
+    |  |  |    |——PostTwoHThreePage
+    |  |  |    |——PostTwoHTwoPage
+    |  |  |    |——PostTwoPage
+    |  |  |    |——SportsDarkPage
+    |  |  |    |——SportsPage
+    |  |  |    |——SportsThreePage
+    |  |  |    |——SportsTwoPage
+    |  |  |    |——TrendingDarkPage
+    |  |  |    |——TrendingPage
+    |  |  |    |——TrendingThreePage
+    |  |  |    |——TrendingTwoPage
+    |  |  |    |——VideoPostOneDarkPage
+    |  |  |    |——VideoPostOneHThreePage
+    |  |  |    |——VideoPostOneHTwoPage
+    |  |  |    |——VideoPostOnePage
+    |  |  |    |——VideoPostThreeDarkPage
+    |  |  |    |——VideoPostThreeHThreePage
+    |  |  |    |——VideoPostThreeHTwoPage
+    |  |  |    |——VideoPostThreePage
+    |  |  |    |——VideoPostTwoDarkPage
+    |  |  |    |——VideoPostTwoHThreePage
+    |  |  |    |——VideoPostTwoHTwoPage
+    |  |  |    |——VideoPostTwoPage
+    |  |  |__doc/                           --all documents like image
+    |  |  |    |__scss                      -- all scss file
+    |  |  |    |__img                      -- all static images
+    |  |  |__store/                         --redux store
+    |  |  |——utils/                         --all statick data and common js
+    |  |  |——store.js                       --redux main store
+    |  |——package.json
+    |  |——package-lock.json
+</code>
+</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery latest version -->
+    <script src="assets/js/vendor/jquery-2.2.4.min.js "></script>
+    <!-- popper.min.js -->
+    <script src="assets/js/vendor/popper.min.js "></script>
+    <!-- bootstrap js -->
+    <script src="assets/js/bootstrap.min.js "></script>
+    <!-- main js -->
+    <script src="assets/js/scripts.js "></script>
+</body>
+
+</html>
